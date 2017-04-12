@@ -55,4 +55,5 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'kaminari', :git => "git://github.com/amatsuda/kaminari.git", :branch => 'master'
 gem 'simple_form'
 gem "font-awesome-rails"
+gem 'devise'
 
