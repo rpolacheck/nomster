@@ -15,6 +15,7 @@ module Nomster
   config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
   config.assets.precompile += %w( .svg .eot .woff .ttf )
-
+  config.enable_dependency_loading = true
+  config.autoload_paths << Rails.root.join('uploaders')
   end
 end
