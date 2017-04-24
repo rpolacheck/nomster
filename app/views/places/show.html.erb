@@ -80,20 +80,7 @@
 </div>
 
 <div class="clear"></div>
-
-  <div class="photo-place">
-    <% @place.photos.each do |photo| %>
-    <div class="booyah-box col-7 offset-1">
-      <% if @place.photos.present? %>
-      <small><%= image_tag photo.picture, class: 'img-fluid' %></small>
-      <% end %>
-      <small><%= photo.caption %></small>
-    <% end %>
-    </div>
-  </div>
-<div class="clear"></div>
-
-
+<br /><br />
 <!--  MODAL COMMENT  -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -121,8 +108,7 @@
 <br />
 <div class="col-10 offset-1">
   <h1 class ="float-left">Comments</h1>
-  <br />
-  <br />
+  <br /><br />
   <!--  BUTTON TRIGGER MODEL COMMENT  -->
   <button type="button" class="btn btn-primary btn-lg float-left" data-toggle="modal" data-target="#myModal">
     Add a comment
@@ -145,7 +131,22 @@
   <% end %>
 </div>
 <br />
-
+<div class="clear"></div>
+<div class="col-10 offset-1">
+  <h1 class ="float-left">Photos</h1>
+  <br /><br />
+<div class="row">
+  <div class="photo-place">
+    <% @place.photos.each do |photo| %>
+    <div class="booyah-box col-7 offset-1">
+      <% if @place.photos.present? %>
+      <small><%= image_tag photo.picture, class: 'img-fluid' %></small>
+      <% end %>
+      <small><%= photo.caption %></small>
+    <% end %>
+    </div>
+  </div>
+</div>
 
 
 
